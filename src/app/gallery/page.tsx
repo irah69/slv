@@ -9,7 +9,7 @@ interface GalleryItem {
   image: string;
 }
 
-export default function Gallery(): JSX.Element {
+export default function Gallery() {
   const [activeFilter, setActiveFilter] = useState<string>("All");
 
   const galleryData: GalleryItem[] = [
