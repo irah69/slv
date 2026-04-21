@@ -15,38 +15,6 @@ export default function Footer() {
         marginTop: 'auto',
       }}
     >
-      {/* ── VIDEO SECTION ── */}
-      <div
-        style={{
-          position: 'relative',
-          width: '100%',
-          height: '300px',
-          overflow: 'hidden',
-          backgroundColor: '#000',
-        }}
-      >
-        <video
-          autoPlay
-          muted
-          loop
-          style={{
-            width: '100%',
-            height: '100%',
-            objectFit: 'cover',
-          }}
-        >
-          <source src="/whychooseus1.mp4" type="video/mp4" />
-        </video>
-        {/* Overlay */}
-        <div
-          style={{
-            position: 'absolute',
-            inset: 0,
-            background: 'linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(10,10,10,0.9))',
-          }}
-        />
-      </div>
-
       {/* ── FOOTER CONTENT ── */}
       <div
         style={{
