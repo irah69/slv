@@ -35,7 +35,7 @@ export default function Gallery(): JSX.Element {
       id: 4,
       title: "Birthday Celebration",
       category: "Birthday",
-      image: "/gallery/g4.avif",
+      image: "/gallery/g5.webp",
     },
     {
       id: 5,
@@ -59,7 +59,7 @@ export default function Gallery(): JSX.Element {
       id: 8,
       title: "Elegant Floral Theme",
       category: "Wedding",
-      image: "/gallery/g5.webp",
+      image: "/gallery/g4.avif",
     },
   ];
 
