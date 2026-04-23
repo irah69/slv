@@ -238,7 +238,7 @@ export default function PremierElegance() {
               textTransform: 'uppercase',
             }}
           >
-            LB Nagar, Hyderabad
+            Patelguda, Hyderabad
           </span>
           <div style={{ height: '1px', width: '60px', background: 'linear-gradient(to left, transparent, #d4a017)' }} />
         </div>
