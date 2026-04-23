@@ -50,22 +50,22 @@ const menuItems = [
 ];
 
 const galleryImages = [
-  { src: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=1200&q=85", size: "big", label: "Grand Ballroom Setup" },
-  { src: "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=600&q=85", size: "small", label: "Live Grill Station" },
-  { src: "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=600&q=85", size: "small", label: "Table Decor" },
-  { src: "https://images.unsplash.com/photo-1555244162-803834f70033?w=1200&q=85", size: "big", label: "Buffet Spread" },
-  { src: "https://images.unsplash.com/photo-1537047902294-62a40c20a6ae?w=600&q=85", size: "small", label: "Chef's Plating" },
-  { src: "https://images.unsplash.com/photo-1567521464027-f127ff144326?w=600&q=85", size: "small", label: "Cocktail Counter" },
-  { src: "https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=1200&q=85", size: "big", label: "Dessert Station" },
-  { src: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=85", size: "small", label: "Gourmet Platter" },
-  { src: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=85", size: "small", label: "Biryani Dum" },
+  { src: "/data3.jpeg", size: "big", label: "Birthday Bash" },
+  { src: "/data2.jpeg", size: "small", label: "Elegant Wedding Haven" },
+  { src: "/data1.jpeg", size: "small", label: "Floral Wedding Symphony" },
+  { src: "/HERO5.jpeg", size: "big", label: "Vibrant Birthday Extravaganza" },
+  { src: "/data6.jpeg", size: "small", label: "Traditional Saree Soirée" },
+  { src: "/data7.jpeg", size: "small", label: "Chic Reception Lounge" },
+  { src: "/data4.jpeg", size: "big", label: "Joyful Birthday Celebration" },
+  { src: "/data8.jpeg", size: "small", label: "Fun-Filled Party Moments" },
+  { src: "/data5.jpeg", size: "small", label: "Energetic College Fest" },
 ];
 
 const eventVideos = [
-  { poster: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&q=80", label: "Wedding Reception", icon: "💍" },
-  { poster: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80", label: "Corporate Gala", icon: "🏆" },
-  { poster: "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=800&q=80", label: "Birthday Soirée", icon: "🎂" },
-  { poster: "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=800&q=80", label: "Festive Feast", icon: "🎊" },
+  { poster: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&q=80", label: "Wedding Reception", icon: "" },
+  { poster: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80", label: "Corporate Gala", icon: "" },
+  { poster: "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=800&q=80", label: "Birthday Soirée", icon: "" },
+  { poster: "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=800&q=80", label: "Festive Feast", icon: "" },
 ];
 
 function MenuCard({ item, index }: { item: typeof menuItems[0]; index: number }) {
@@ -131,14 +131,7 @@ function MenuCard({ item, index }: { item: typeof menuItems[0]; index: number })
           {item.title}
         </h3>
         <p className="text-sm text-amber-100/70 leading-relaxed">{item.desc}</p>
-        <button
-          className="mt-4 text-xs uppercase tracking-widest font-semibold px-5 py-2 rounded-full border transition-all duration-300 hover:text-white"
-          style={{ borderColor: item.color, color: item.color, background: "transparent" }}
-          onMouseEnter={(e) => { (e.currentTarget as HTMLButtonElement).style.background = item.color; }}
-          onMouseLeave={(e) => { (e.currentTarget as HTMLButtonElement).style.background = "transparent"; }}
-        >
-          Explore Menu →
-        </button>
+
       </div>
     </div>
   );
@@ -495,17 +488,6 @@ export default function BanquetHallWebsite() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
 
                 {/* Play button */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div
-                    className="w-16 h-16 rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110"
-                    style={{
-                      background: "rgba(201,151,75,0.85)",
-                      boxShadow: "0 0 30px rgba(201,151,75,0.5)",
-                    }}
-                  >
-                    <span className="text-xl ml-1">▶</span>
-                  </div>
-                </div>
 
                 {/* Label */}
                 <div className="absolute bottom-6 left-6">
@@ -598,14 +580,9 @@ export default function BanquetHallWebsite() {
           Talk to our event specialists and get a fully customised catering proposal within 24 hours.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button
-            className="px-10 py-4 text-sm uppercase tracking-widest font-bold rounded-full transition-all duration-300 hover:scale-105"
-            style={{ background: "#C9974B", color: "#0d0a05", boxShadow: "0 0 40px rgba(201,151,75,0.35)" }}
-          >
-            Get a Free Quote
-          </button>
+
           <button className="px-10 py-4 text-sm uppercase tracking-widest font-semibold rounded-full border border-amber-500/40 text-amber-400 hover:border-amber-400 transition-all duration-300">
-            📞 +91 98765 43210
+            📞 +91 90523 41300
           </button>
         </div>
       </section>
@@ -624,7 +601,7 @@ export default function BanquetHallWebsite() {
           {[
             { heading: "Services", links: ["Wedding Catering", "Corporate Events", "Birthday Parties", "Outdoor Catering"] },
             { heading: "Menus", links: ["Royal Buffet", "Mughlai Feast", "Continental", "Sweet Indulgence"] },
-            { heading: "Contact", links: ["Banjara Hills, Hyderabad", "+91 98765 43210", "info@grandvivah.in", "Mon–Sun: 9AM–9PM"] },
+            { heading: "Contact", links: ["Banjara Hills, Hyderabad", "+91 90523 41300", "info@grandvivah.in", "Mon–Sun: 9AM–9PM"] },
           ].map((col, i) => (
             <div key={i}>
               <h4 className="text-xs uppercase tracking-widest text-amber-500 font-semibold mb-4">{col.heading}</h4>

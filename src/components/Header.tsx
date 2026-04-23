@@ -1,8 +1,11 @@
 'use client';
-
+import { Playfair_Display } from 'next/font/google';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800'],
+});
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -42,7 +45,7 @@ export default function Header() {
           backgroundColor: scrolled ? 'rgba(0,0,0,0.97)' : '#000000',
           borderBottom: scrolled ? '1px solid rgba(255,255,255,0.08)' : '1px solid transparent',
           transition: 'background-color 0.3s ease, border-color 0.3s ease',
-          fontFamily: "'Georgia', 'Times New Roman', serif",
+          fontFamily: playfair.style.fontFamily,
         }}
       >
         <nav

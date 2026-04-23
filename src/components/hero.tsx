@@ -6,31 +6,31 @@ import Link from 'next/link';
 const slides = [
   {
     id: 1,
-    image: 'https://www.marriagecolours.com/wp-content/uploads/2024/09/SheratonGrand-Reception-MainStage-Floral-Design.jpg',
+    image: '/hero1.png',
     title: 'SLV Banquet Hall',
     subtitle: 'Premium Venue for Your Special Events',
     tag: 'Weddings & Celebrations',
   },
   {
     id: 2,
-    image: 'https://images.unsplash.com/photo-1587271407850-8d438ca9fdf2?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHdlZGRpbmclMjBzdGFnZXxlbnwwfHwwfHx8MA%3D%3D',
-    title: 'Elegant Wedding Setup',
-    subtitle: 'Create Unforgettable Moments in Our Beautiful Space',
-    tag: 'Wedding Venues',
+    image: '/HERO4.jpeg',
+    title: 'SLV Banquet Hall',
+    subtitle: 'Premium Venue for Your Special Events',
+    tag: 'Weddings & Celebrations',
   },
   {
     id: 3,
-    image: 'https://www.marriagecolours.com/wp-content/uploads/2024/09/the-leela-palace-cosmics-waves-ambience-decor-stage-florals-hangings.jpg',
-    title: 'Reception Excellence',
-    subtitle: 'Perfect Ambiance for Your Grand Celebration',
-    tag: 'Receptions & Banquets',
+    image: '/HERO5.jpeg',
+    title: 'SLV Banquet Hall',
+    subtitle: 'Premium Venue for Your Special Events',
+    tag: 'Weddings & Celebrations',
   },
   {
     id: 4,
-    image: 'https://weddingsutra.com/images/wedding-images/blog-images/tamanna-nikunj/tamanna-nikunj-img1.jpg',
+    image: '/HERO2.jpeg',
     title: 'SLV Banquet Hall',
-    subtitle: 'Magical Evening Venues',
-    tag: 'Special Events',
+    subtitle: 'Premium Venue for Your Special Events',
+    tag: 'Weddings & Celebrations',
   },
 ];
 

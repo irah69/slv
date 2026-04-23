@@ -12,57 +12,88 @@ interface GalleryItem {
 export default function Gallery() {
   const [activeFilter, setActiveFilter] = useState<string>("All");
 
-  const galleryData: GalleryItem[] = [
-    {
-      id: 1,
-      title: "Royal Wedding Setup",
-      category: "Wedding",
-      image: "/gallery/g1.avif",
-    },
-    {
-      id: 2,
-      title: "Luxury Reception Hall",
-      category: "Reception",
-      image: "/gallery/g2.webp",
-    },
-    {
-      id: 3,
-      title: "Corporate Event Space",
-      category: "Corporate",
-      image: "/gallery/g3.avif",
-    },
-    {
-      id: 4,
-      title: "Birthday Celebration",
-      category: "Birthday",
-      image: "/gallery/g5.webp",
-    },
-    {
-      id: 5,
-      title: "Traditional Decor",
-      category: "Wedding",
-      image: "/gallery/g8.avif",
-    },
-    {
-      id: 6,
-      title: "Luxury Stage Design",
-      category: "Reception",
-      image: "/gallery/g6.avif",
-    },
-    {
-      id: 7,
-      title: "Premium Dining Hall",
-      category: "Corporate",
-      image: "/gallery/g7.jpg",
-    },
-    {
-      id: 8,
-      title: "Elegant Floral Theme",
-      category: "Wedding",
-      image: "/gallery/g4.avif",
-    },
-  ];
+const galleryData: GalleryItem[] = [
+  {
+    id: 1,
+    title: "Opulent Grand Ballroom",
+    category: "Wedding",
+    image: "/data3.jpeg",
+  },
+  {
+    id: 2,
+    title: "Elegant Wedding Haven",
+    category: "Wedding",
+    image: "/data2.jpeg",
+  },
+  {
+    id: 3,
+    title: "Floral Wedding Symphony",
+    category: "Wedding",
+    image: "/data1.jpeg",
+  },
+  {
+    id: 4,
+    title: "Vibrant Birthday Extravaganza",
+    category: "Birthday",
+    image: "/HERO5.jpeg",
+  },
+  {
+    id: 5,
+    title: "Traditional Saree Soirée",
+    category: "Cultural",
+    image: "/data6.jpeg",
+  },
+  {
+    id: 6,
+    title: "Chic Reception Lounge",
+    category: "Reception",
+    image: "/data7.jpeg",
+  },
+  {
+    id: 7,
+    title: "Joyful Birthday Celebration",
+    category: "Birthday",
+    image: "/data4.jpeg",
+  },
+  {
+    id: 8,
+    title: "Fun-Filled Party Moments",
+    category: "Birthday",
+    image: "/data8.jpeg",
+  },
+  {
+    id: 9,
+    title: "Energetic College Fest",
+    category: "Corporate",
+    image: "/data5.jpeg",
+  },
 
+  // New HERO images
+  {
+    id: 10,
+    title: "Grand Entrance Showcase",
+    category: "Wedding",
+    image: "/HERO1.PNG",
+  },
+  {
+    id: 11,
+    title: "Majestic Stage Ambience",
+    category: "Reception",
+    image: "/HERO2.jpeg",
+  },
+  {
+    id: 12,
+    title: "Luxe Celebration Setup",
+    category: "Birthday",
+    image: "/HERO3.jpeg",
+  },
+  {
+    id: 13,
+    title: "Signature Event Highlight",
+    category: "Corporate",
+    image: "/HERO4.jpeg",
+  },
+];
   const categories: string[] = [
     "All",
     "Wedding",
@@ -123,9 +154,7 @@ export default function Gallery() {
       </div>
 
       {/* CTA */}
-      <div style={styles.bottom}>
-        <button style={styles.ctaBtn}>BOOK YOUR EVENT</button>
-      </div>
+
     </section>
   );
 }
